@@ -3,6 +3,9 @@ import { Button } from "flowbite-react";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import Head from "../components/navbar";
 import Slide from "../components/Carousel";
+import Catalog from "./Catalog";
+import About from "./About";
+
 
 const HeroPage = () => {
   return (
@@ -10,7 +13,7 @@ const HeroPage = () => {
       <Head />
       <div className="m-4 mt-16 text-black py-20">
         <div className="container mx-auto text-center">
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-6xl text-center font-bold">
             Welcome to{" "}
             <span
               style={{
@@ -18,6 +21,7 @@ const HeroPage = () => {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
+              className="text-center"
             >
               ROCKSHELL CORP
             </span>
@@ -47,8 +51,14 @@ const HeroPage = () => {
           </Button>
         </div>
       </div>
-      <div className="m-24 -mt-24">
+      <div className="m-12 -mt-24">
         <Slide/>
+      </div>
+      <div className="m-12 mt-28">
+        <Catalog/>
+      </div>
+      <div className="m-12 mt-28">
+        <About/>
       </div>
     </div>
   );

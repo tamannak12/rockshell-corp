@@ -11,8 +11,8 @@ function Slide() {
     >
       <Carousel
         className="rounded-2xl shadow-2xl shadow-blue-300"
-        leftControl="."
-        rightControl="."
+        leftControl
+        rightControl
       >
         <img src={img} alt="..." className="w-full h-full object-cover" />
         <img src={img} alt="..." className="w-full h-full object-cover" />
