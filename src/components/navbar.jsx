@@ -1,5 +1,5 @@
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-import img from "../assets/images/Logo.svg";
+import img from "../assets/images/Rockshell.svg";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 export function Head() {
