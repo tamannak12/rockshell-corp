@@ -5,6 +5,9 @@ import Head from "../components/navbar";
 import Slide from "../components/Carousel";
 import Catalog from "./Catalog";
 import About from "./About";
+import { Down } from "../components/footer";
+import MapEmbed from "../components/Map";
+import { Proof } from "./proof";
 
 
 const HeroPage = () => {
@@ -59,6 +62,12 @@ const HeroPage = () => {
       </div>
       <div className="m-12 mt-28">
         <About/>
+      </div>
+      <div className="m-12 mt-4">
+        <Proof/>
+      </div>
+      <div className="m-12 mt-28"> 
+        <Down/>
       </div>
     </div>
   );

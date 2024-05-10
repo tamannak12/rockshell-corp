@@ -1,12 +1,13 @@
 import img from "../assets/images/1.jpg";
 import about from "../assets/images/about.svg";
 import A from "../assets/images/pro1.svg";
-import grid from "../assets/images/grid.jpg";
+import B from "../assets/images/90.svg";
+import C from "../assets/images/91.svg";
+import { Companies } from "../components/clients";
 
 function About() {
   return (
-    <>
-    <div>
+    <div className="mx-0">
       <div className="flex justify-center">
         <img src={about} alt="ABOUT US" />
       </div>
@@ -53,41 +54,31 @@ function About() {
           </div>
 
           <div className="flex justify-center">
-            <img src={A} />
+            <img src={B} />
 
             <span className="flex flex-col ml-4 text-left font-semibold">
-              Professional Workers
+            Effective Team Work
               <span className="text-left text-gray-400  font-normal">
-                Our dedicated workmanship, structured approach & unmatched
-                commitment sets us apart from the rest.
+              Our team of professionals works in close co-ordination to give our clients a seamless and hassle-free experience.
               </span>
             </span>
           </div>
 
           <div className="flex justify-center">
-            <img src={A} />
+            <img src={C} />
 
             <span className="flex flex-col ml-4 text-left font-semibold">
-              Professional Workers
+            Quality Assurance
               <span className="text-left text-gray-400  font-normal">
-                Our dedicated workmanship, structured approach & unmatched
-                commitment sets us apart from the rest.
+              We pay close attention at every stage of production to ensure that the quality standards are met at all times.
+
               </span>
             </span>
           </div>
 
         </div>
       </div>
-      
-    </div>
-    <h2 className="mt-12 flex text-2xl justify-center">OUR CLIENTS</h2>
-    <div className="m-0">
-        <img
-        className="m-0 mt-2"
-        src={grid}
-        />
-    </div>
-    </>
+    </div >
   );
 }
 
