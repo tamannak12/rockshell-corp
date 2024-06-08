@@ -4,6 +4,7 @@ import { injectSpeedInsights } from "@vercel/speed-insights";
 import "./App.css";
 import ReactGA from 'react-ga';
 import HeroPage from "./pages/hero";
+import Contact from "./pages/Contact";
 ReactGA.initialize('G-J6KW426SST');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -15,6 +16,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<HeroPage />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </Router>
   );

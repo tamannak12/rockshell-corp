@@ -15,12 +15,12 @@ export function Down() {
   return (
     <Footer container>
       <div className="w-full">
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div className="flex flex-col object-center">
+        <div className="grid w-full justify-between gap-6 sm:flex sm:justify-between">
+          <div className="flex flex-col">
             <FooterBrand href="/">
-              <img src={logo} className=" h-14 " alt="Rockshell Logo" />
-              <div className="flex flex-col items-left">
-                <span className="  self-center whitespace-nowrap  text-xl font-bold dark:text-white">
+              <img src={logo} className="h-14" alt="Rockshell Logo" />
+              <div className="flex flex-col items-start">
+                <span className="text-xl font-bold dark:text-white">
                   ROCKSHELL
                 </span>
                 <span className="text-gray-700 dark:text-gray-400 -mt-2">
@@ -29,7 +29,7 @@ export function Down() {
               </div>
             </FooterBrand>
 
-            <div className=" m-6 grid grid-cols-2  justify-center gap-8 sm:grid-cols-3 sm:gap-6">
+            <div className="mt-6 grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
               <div>
                 <FooterTitle title="Services" />
                 <FooterLinkGroup col>
@@ -42,23 +42,22 @@ export function Down() {
                 <FooterTitle title="Company" />
                 <FooterLinkGroup col>
                   <FooterLink href="#">About us</FooterLink>
-                  <FooterLink href="#">Blogs</FooterLink>
+                  
                 </FooterLinkGroup>
               </div>
               <div>
                 <FooterTitle title="Legal" />
                 <FooterLinkGroup col>
-                  <FooterLink href="#">Privacy Policy</FooterLink>
-                  <FooterLink href="#">Terms &amp; Conditions</FooterLink>
+                  <FooterLink href="#">Clients</FooterLink>
+                  <FooterLink href="#">Certificates</FooterLink>
                 </FooterLinkGroup>
               </div>
             </div>
           </div>
-          <div className="mt-4 rounded-lg align-left sm:mt-0 sm:justify-center">
+          <div className="mt-4 sm:mt-0 sm:flex sm:flex-col sm:items-center">
             <iframe
               title="Google Map"
-              width="700"
-              height="300"
+              className="w-full h-48 md:h-64 lg:h-80 lg:w-[700px]"
               frameBorder="0"
               loading="lazy"
               style={{ border: 0 }}
@@ -69,12 +68,15 @@ export function Down() {
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-        <FooterCopyright href="#" by="ROCKSHELL CORP™" year={2024} />
+          <FooterCopyright href="#" by="ROCKSHELL CORP™" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <FooterIcon href="#" icon={BsFacebook} />
             <FooterIcon href="#" icon={BsInstagram} />
             <FooterIcon href="#" icon={BsTwitter} />
-            <FooterIcon href="#" icon={BsLinkedin} />
+            <FooterIcon
+              href="https://www.linkedin.com/company/rockshell-corp-energy-efficient-solutions/"
+              icon={BsLinkedin}
+            />
           </div>
         </div>
       </div>

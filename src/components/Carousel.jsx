@@ -1,5 +1,6 @@
 import { Carousel } from "flowbite-react";
 import img from "../assets/images/1.jpg";
+import img2 from "../assets/images/2.jpg";
 
 function Slide() {
   return (
@@ -15,9 +16,9 @@ function Slide() {
         rightControl
       >
         <img src={img} alt="..." className="w-full h-full object-cover" />
+        <img src={img2} alt="..." className="w-full h-full object-cover" />
         <img src={img} alt="..." className="w-full h-full object-cover" />
-        <img src={img} alt="..." className="w-full h-full object-cover" />
-        <img src={img} alt="..." className="w-full h-full object-cover" />
+        <img src={img2} alt="..." className="w-full h-full object-cover" />
         <img src={img} alt="..." className="w-full h-full object-cover" />
       </Carousel>
     </div>

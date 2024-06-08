@@ -1,9 +1,8 @@
-import img from "../assets/images/1.jpg";
+import img from "../assets/images/team.jpg";
 import about from "../assets/images/about.svg";
 import A from "../assets/images/pro1.svg";
 import B from "../assets/images/90.svg";
 import C from "../assets/images/91.svg";
-import { Companies } from "../components/clients";
 
 function About() {
   return (
@@ -11,8 +10,8 @@ function About() {
       <div className="flex justify-center">
         <img src={about} alt="ABOUT US" />
       </div>
-      <div className="mt-12 flex items-center">
-        <span className="flex flex-col m-2 mr-6 text-justify text-gray-400 font-normal">
+      <div className="mt-12 flex flex-col md:flex-row items-center md:items-start">
+        <span className="flex flex-col m-2 mr-6 text-justify text-gray-400 font-normal md:w-1/2 justify-center items-center">
           Rockshell Corp is the leading manufacturer for Innovative Heating,
           cooling and Effluent/Chemical recovery system in India. The
           state-of-the-art manufacturing facility at Vasai, Maharashtra with
@@ -35,13 +34,13 @@ function About() {
         <img
           src={img}
           alt="team PHOTO"
-          className="m-2  h-auto w-1/2 rounded-xl shadow-xl object-cover"
+          className="m-2 h-auto w-full md:w-1/2 rounded-xl shadow-xl object-cover"
         />
       </div>
       <div className="mt-12 font-bold">
         <h2 className="flex text-xl justify-center">WHO ARE WE?</h2>
-        <div className="m-6 mt-6 flex flex-row justify-around gap-4">
-          <div className="flex justify-center">
+        <div className="m-6 mt-6 flex flex-col md:flex-row justify-around gap-4">
+          <div className="flex justify-center mb-6 md:mb-0">
             <img src={A} />
 
             <span className="flex flex-col ml-4 text-left font-semibold">
@@ -53,7 +52,7 @@ function About() {
             </span>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-6 md:mb-0">
             <img src={B} />
 
             <span className="flex flex-col ml-4 text-left font-semibold">
