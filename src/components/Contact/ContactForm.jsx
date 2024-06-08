@@ -23,29 +23,29 @@ const ContactForm = () => {
 
     const refForm = useRef();
 
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    //     setLoading(true);
-    //     emailjs
-    //         .sendForm('service_v33su0b', 'template_hzqyhfk', refForm.current, 'dlGGQb2d2yTvzRX7X')
-    //         .then((result) => {
-    //             setLoading(false);
-    //             setSnackbarSeverity('success');
-    //             setSnackbarOpen(true);
-    //             document.getElementsByName('from_name')[0].value = '';
-    //             document.getElementsByName('from_email')[0].value = '';
-    //             document.getElementsByName('message')[0].value = '';
-    //         })
-    //         .catch((error) => {
-    //             setLoading(false);
-    //             setSnackbarSeverity('error');
-    //             setSnackbarOpen(true);
-    //             document.getElementsByName('from_name')[0].value = '';
-    //             document.getElementsByName('from_email')[0].value = '';
-    //             document.getElementsByName('message')[0].value = '';
-    //         });
-    // };
+        setLoading(true);
+        emailjs
+            // .sendForm('service_v33su0b', 'template_hzqyhfk', refForm.current, 'dlGGQb2d2yTvzRX7X')
+            .then((result) => {
+                setLoading(false);
+                setSnackbarSeverity('success');
+                setSnackbarOpen(true);
+                document.getElementsByName('from_name')[0].value = '';
+                document.getElementsByName('from_email')[0].value = '';
+                document.getElementsByName('message')[0].value = '';
+            })
+            .catch((error) => {
+                setLoading(false);
+                setSnackbarSeverity('error');
+                setSnackbarOpen(true);
+                document.getElementsByName('from_name')[0].value = '';
+                document.getElementsByName('from_email')[0].value = '';
+                document.getElementsByName('message')[0].value = '';
+            });
+    };
 
     return (
             <div className='flex justify-center m-12'>
