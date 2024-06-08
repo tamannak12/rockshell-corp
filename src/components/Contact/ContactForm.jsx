@@ -49,13 +49,13 @@ const ContactForm = () => {
 
     return (
             <div className='flex justify-center m-12'>
-            <form className='flex flex-col gap-8 sm:w-[450px] w-[320px] bg-[#050E2480]  rounded-[1rem] p-5 relative overflow-hidden' ref={refForm} onSubmit={sendEmail}>
+            <form className='flex flex-col gap-8 sm:w-[450px] w-[320px] bg-[#a3abbf80]  rounded-[1rem] p-5 relative overflow-hidden' ref={refForm} onSubmit={sendEmail}>
                 <div className="flex md:gap-4 md:flex-row flex-col gap-8 justify-between">
                     <div className="flex flex-col items-start gap-3">
-                        <label htmlFor="fullName" className="text-white text-[0.9rem]  whitespace-nowrap">Full Name</label>
+                        <label htmlFor="fullName" className="text-black text-[0.9rem]  whitespace-nowrap">Full Name</label>
                         <input
                             type="text"
-                            className="border border-[#505362] rounded-[0.5rem] w-full md:p-2 p-3 bg-[#050E2480] text-white focus:ring-0"
+                            className="border border-[#505362] rounded-[0.5rem] w-full md:p-2 p-3 bg-[#61697e80] text-white focus:ring-0"
                             id="fullName"
                             placeholder="John Doe"
                             name='from_name'
@@ -63,10 +63,10 @@ const ContactForm = () => {
                         />
                     </div>
                     <div className="flex flex-col items-start gap-3">
-                        <label htmlFor="email" className="text-white text-[0.9rem] whitespace-nowrap">Email address</label>
+                        <label htmlFor="email" className="text-black text-[0.9rem] whitespace-nowrap">Email address</label>
                         <input
                             type="email"
-                            className="border border-[#505362] rounded-[0.5rem] w-full md:p-2 p-3 bg-[#050E2480] text-white focus:ring-0"
+                            className="border border-[#505362] rounded-[0.5rem] w-full md:p-2 p-3 bg-[#61697e80] text-white focus:ring-0"
                             id="email"
                             placeholder="xyz@gmail.com"
                             name='from_email'
@@ -75,16 +75,16 @@ const ContactForm = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-start gap-3">
-                    <label htmlFor="message" className="text-white text-[0.9rem]">Message</label>
+                    <label htmlFor="message" className="text-black text-[0.9rem]">Message</label>
                     <textarea
                         placeholder="Message"
                         name='message'
-                        className='rounded-lg bg-[#050E2480] text-white w-full p-3 border border-[#505362] focus:ring-0'
+                        className='rounded-lg bg-[#61697e80] text-white w-full p-3 border border-[#505362] focus:ring-0'
                         id='message'
                         required
                     ></textarea>
                 </div>
-                <button type="submit" className={`${loading ? 'disabled' : 'border rounded-[0.5rem] sm:px-[3rem] sm:py-[0.5rem] py-[0.7rem] bg-[#2135a9] text-white hover:bg-[#1a2e7a] transition-all w-full'}`}>
+                <button type="submit" className={`${loading ? 'disabled' : 'border rounded-[0.5rem] sm:px-[3rem] sm:py-[0.5rem] py-[0.7rem] bg-[#153b56ac] text-white hover:bg-[#4360d0] transition-all w-full'}`}>
                     {loading ? "Sending" : 'Send message'}
                 </button>
                
