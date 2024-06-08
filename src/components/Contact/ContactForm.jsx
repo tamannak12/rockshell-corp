@@ -28,7 +28,7 @@ const ContactForm = () => {
 
         setLoading(true);
         emailjs
-            // .sendForm('service_v33su0b', 'template_hzqyhfk', refForm.current, 'dlGGQb2d2yTvzRX7X')
+            .sendForm('service_v2vg1nb', 'template_ibkwr1s', refForm.current, 'avtzyBZ27rGhagI39')
             .then((result) => {
                 setLoading(false);
                 setSnackbarSeverity('success');
@@ -87,7 +87,6 @@ const ContactForm = () => {
                 <button type="submit" className={`${loading ? 'disabled' : 'border rounded-[0.5rem] sm:px-[3rem] sm:py-[0.5rem] py-[0.7rem] bg-[#153b56ac] text-white hover:bg-[#4360d0] transition-all w-full'}`}>
                     {loading ? "Sending" : 'Send message'}
                 </button>
-               
             </form>
             <Snackbar open={snackbarOpen} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity={snackbarSeverity} sx={{ width: '100%' }}>
