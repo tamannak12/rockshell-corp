@@ -10,7 +10,7 @@ export const contactList = [
         title: "Send us a message",
         description: "You can mail us at the give mail id and our team will get back to you as soon as we receive the mail.",
         info: "Support@rockshellcorp.com",
-        link: "mailto:chumsai.tech@gmail.com"
+        link: "mailto:Support@rockshellcorp.com"
     },
     {
         icon: callContactIcon,
@@ -28,25 +28,3 @@ export const contactList = [
     }
 ]
 
-export const socialList = [
-    {
-        title: "Facebook",
-        icon: BsFacebook,
-        link: "https://www.facebook.com/profile.php?id=61557566630374&mibextid=LQQJ4d"
-    },
-    {
-        title: "Twitter",
-        icon: BsTwitter,
-        link: "https://x.com/chums_ai"
-    },
-    {
-        title: "Instagram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/chums.ai"
-    },
-    {
-        title: "LinkedIn",
-        icon: BsLinkedin,
-        link: "https://www.linkedin.com/company/chums-ai/"
-    }
-]
